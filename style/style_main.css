@@ -21,6 +21,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 
     background-image: linear-gradient(to right bottom, var(--color-0), var(--color-3));
+    overflow: hidden;
 }
 
 main{
@@ -44,18 +45,18 @@ main{
 }
 
 .login_background{
-    height: 40%;
+    min-height: 40%;
 }
 
 .login_background > img{
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 
     border-radius: 10px 10px 0px 0px;
 }
 
 .menu{
-    height: 60%;
+    min-height: 60%;
 
     padding: 10px;
 }

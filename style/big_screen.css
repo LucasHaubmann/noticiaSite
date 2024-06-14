@@ -22,7 +22,7 @@ body{
 
     background-image: linear-gradient(to right bottom, var(--color-0), var(--color-3));
 
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 main{
@@ -32,7 +32,7 @@ main{
     flex-direction: row-reverse;
 
     width: 80%;
-    height: 80%;
+    min-height: 80%;
 
     left: 50%;
     top: 50%;   
@@ -46,19 +46,19 @@ main{
 }
 
 .login_background{
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 }
 
 .login_background > img{
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 
     border-radius: 0px 10px 10px 0px;
 }
 
 .menu{
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 
     padding: 10px;
