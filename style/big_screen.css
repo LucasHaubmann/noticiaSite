@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --color-0: #29C7D9;
+    --color-1: #23B7D9;
+    --color-2: #1B91BF;
+    --color-3: #0388A6;
+    --color-4: #025E73;
+    --color-5: #011C26;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: linear-gradient(to right bottom, var(--color-0), var(--color-3));
+
+    overflow: hidden;
+}
+
+main{
+    position: absolute;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    width: 80%;
+    height: 80%;
+
+    left: 50%;
+    top: 50%;   
+
+    transform: translate(-50%, -50%); 
+
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.500);
+}
+
+.login_background{
+    height: 100%;
+    width: 100%;
+}
+
+.login_background > img{
+    height: 100%;
+    width: 100%;
+
+    border-radius: 0px 10px 10px 0px;
+}
+
+.menu{
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+}
+
+.menu > h1, .menu > p{
+    margin: 30px 0px;
+
+    text-align: center;
+}
+
+.menu > div#email, .menu > div#senha{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 0px 5px 0px;
+    padding: 0px 0px 0px 10px;
+
+    background-color: var(--color-4);
+    color: white;
+
+    border-radius: 8px;
+}
+
+div#email > input,  div#senha > input{
+    width: 100%;
+    min-height: 5vh;
+
+    background-color: var(--color-3);
+
+    border-radius: 8px;
+}
+
+div#email > input::placeholder,  div#senha > input::placeholder{
+    color: white;
+    text-align:  center;
+
+    background-color: var(--color-3);
+}
+
+div#email > input{
+    margin-left: 3vw;
+}
+
+div#senha > input{
+    margin-left: 3vw;
+}
+
+div#esqueci_senha > a{
+    color: var(--color-5);    
+
+    text-decoration: none;
+}
+
+div#esqueci_senha > a:hover{
+    color: var(--color-3);
+}    
+
+div#enviar{
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 2em;
+}
+
+div#enviar > input{
+    height: 100%;
+    width: 100%;
+
+    padding: 10px;
+
+    font-size: 1.2em;
+
+    color: white;
+
+    background-color: var(--color-1);
+
+    border-radius: 10px;
+}    
+
+
+div#enviar > input:hover{
+    color: var(--color-5);
+
+    background-color: var(--color-2);
+
+    font-size: 1.2em;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}    
