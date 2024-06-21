@@ -48,6 +48,9 @@ main{
 .login_background{
     max-height: 100%;
     width: 100%;
+
+    border-left: solid 7px var(--color-5);
+
 }
 
 .login_background > img{
@@ -72,7 +75,7 @@ main{
     transform: scale(.8);
 }
 
-.menu > div#email, .menu > div#senha{
+div#email, div#senha{
     display: flex;
     flex-direction: row;
     margin: 2vh 0px 5px 0px;
@@ -85,6 +88,11 @@ main{
 
     transform: scale(.8);
 }
+
+div#email > label > img, div#senha > label >  img{
+    padding: 4px 0px;
+}    
+
 
 div#email > input,  div#senha > input{
     width: 100%;
@@ -103,11 +111,11 @@ div#email > input::placeholder,  div#senha > input::placeholder{
 }
 
 div#email > input{
-    margin-left: 3vw;
+    margin-left: .5vw;
 }
 
 div#senha > input{
-    margin-left: 3vw;
+    margin-left: .5vw;
 }
 
 div#esqueci_senha{

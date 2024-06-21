@@ -48,6 +48,8 @@ main{
 .login_background{
     min-height: 100%;
     width: 100%;
+
+    border-left: solid 7px var(--color-5);
 }
 
 .login_background > img{
@@ -70,7 +72,7 @@ main{
     text-align: center;
 }
 
-.menu > div#email, .menu > div#senha{
+div#email, div#senha{
     display: flex;
     flex-direction: row;
     margin: 5vh 0px 5px 0px;
@@ -81,6 +83,11 @@ main{
 
     border-radius: 8px;
 }
+
+div#email > label > img, div#senha > label >  img{
+    padding: 4px 0px;
+}    
+
 
 div#email > input,  div#senha > input{
     width: 100%;
@@ -99,11 +106,16 @@ div#email > input::placeholder,  div#senha > input::placeholder{
 }
 
 div#email > input{
-    margin-left: 3vw;
+    margin-left: .5vw;
 }
 
 div#senha > input{
-    margin-left: 3vw;
+    margin-left: .5vw;
+}
+
+.esqueciSenha_cadastrar{
+    display: flex;
+    flex-direction: row;
 }
 
 div#esqueci_senha > a{
