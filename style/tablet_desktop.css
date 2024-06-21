@@ -48,9 +48,6 @@ main{
 .login_background{
     max-height: 100%;
     width: 100%;
-
-    border-left: solid 7px var(--color-5);
-
 }
 
 .login_background > img{
