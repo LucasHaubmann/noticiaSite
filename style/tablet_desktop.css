@@ -68,25 +68,21 @@ main{
 }
 
 .menu > h1, .menu > p{
-    margin: 5px 0px;
+    margin: 30px 0px;
 
     text-align: center;
-
-    transform: scale(.8);
-}
+ }
 
 div#email, div#senha{
     display: flex;
     flex-direction: row;
-    margin: 2vh 0px 5px 0px;
+    margin: 5vh 0px 5px 0px;
     padding: 0px 0px 0px 10px;
 
     background-color: var(--color-4);
     color: white;
 
     border-radius: 8px;
-
-    transform: scale(.8);
 }
 
 div#email > label > img, div#senha > label >  img{
@@ -118,18 +114,11 @@ div#senha > input{
     margin-left: .5vw;
 }
 
-div#esqueci_senha{
-    transform: scale(.8);
-
-    margin-bottom: -.5em;
-}
-
 div#esqueci_senha > a{
     color: var(--color-5);    
 
     text-decoration: none;
 
-    transform: scale(.8);
 }
 
 div#esqueci_senha > a:hover{
@@ -141,9 +130,7 @@ div#enviar{
 
     justify-content: center;
 
-    margin: .5em;
-    transform: scale(.6);
-
+    margin: 5vh 0px;
 }
 
 div#enviar > input{
