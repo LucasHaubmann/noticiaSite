@@ -32,7 +32,7 @@ main{
     flex-direction: row-reverse;
 
     width: 80%;
-    min-height: 80%;
+    height: 80%;
 
     left: 50%;
     top: 50%;   
@@ -46,7 +46,7 @@ main{
 }
 
 .login_background{
-    min-height: 100%;
+    max-height: 100%;
     width: 100%;
 }
 
@@ -58,28 +58,32 @@ main{
 }
 
 .menu{
-    height: 100%;
+    max-height: 100%;
     width: 100%;
 
     padding: 10px;
 }
 
 .menu > h1, .menu > p{
-    margin: 30px 0px;
+    margin: 5px 0px;
 
     text-align: center;
+
+    transform: scale(.8);
 }
 
 .menu > div#email, .menu > div#senha{
     display: flex;
     flex-direction: row;
-    margin: 5vh 0px 5px 0px;
+    margin: 2vh 0px 5px 0px;
     padding: 0px 0px 0px 10px;
 
     background-color: var(--color-4);
     color: white;
 
     border-radius: 8px;
+
+    transform: scale(.8);
 }
 
 div#email > input,  div#senha > input{
@@ -106,10 +110,18 @@ div#senha > input{
     margin-left: 3vw;
 }
 
+div#esqueci_senha{
+    transform: scale(.8);
+
+    margin-bottom: -.5em;
+}
+
 div#esqueci_senha > a{
     color: var(--color-5);    
 
     text-decoration: none;
+
+    transform: scale(.8);
 }
 
 div#esqueci_senha > a:hover{
@@ -121,7 +133,9 @@ div#enviar{
 
     justify-content: center;
 
-    margin-top: 2em;
+    margin: .5em;
+    transform: scale(.6);
+
 }
 
 div#enviar > input{
